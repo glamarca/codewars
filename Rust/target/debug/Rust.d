@@ -1,0 +1,1 @@
+/media/Data/Info/CodeWars/Rust/target/debug/Rust: /media/Data/Info/CodeWars/Rust/src/highest_and_low.rs /media/Data/Info/CodeWars/Rust/src/moves_in_squared_strings.rs /media/Data/Info/CodeWars/Rust/src/main.rs
