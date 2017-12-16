@@ -1,0 +1,8 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Gcov template
+# gcc coverage testing tool files
+
+*.gcno
+*.gcda
+*.gcov
+
