@@ -15,4 +15,16 @@ pub mod moves_in_squared_string {
     pub fn make_move<F>(text : String, funct : F)  -> String where F: Fn(String) -> String {
         funct(text)
     }
+
+    #[test]
+    fn text_make_move(){
+        let s = String::from("abcd\nefgh\nijkl\nmnop");
+        testing_equals(make_move(s, vert_mirror), String::from("dcba\nhgfe\nlkji\nponm"));
+        let s = String::from("abcd\nefgh\nijkl\nmnop");
+        testing_equals(make_move(s, hor_mirror), String::from("mnop\nijkl\nefgh\nabcd"));
+    }
+
+    fn testing_equals(a : String , b : String) -> (){
+        assert_eq!(a,b)
+    }
 }
