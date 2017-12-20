@@ -1,21 +1,9 @@
-
-val x = List(1,2,3)
-val y = List(1,2,3)
-
-x == y
-
-def rotate(matrix: List[List[Int]]): List[List[Int]] = {
-  if(matrix.nonEmpty){
-    (for {
-      i <- matrix.head.indices
-      interMed = (for {
-        j <- matrix.indices
-      } yield matrix(j).reverse(i)).toList
-    } yield interMed).toList
-  } else {
-    matrix
-  }
+def contains(string1: List[Char], string2 : List[Char]) : Boolean = {
+  string2 exists (substring => string1 contains substring)
 }
 
-val matrix = List(x,y)
-rotate(matrix)
+val s1 = "x".toList
+val s2 = "klklx".toList
+
+contains(s1, s2)
+contains(s2, s1)
