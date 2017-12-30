@@ -1,9 +1,5 @@
-def contains(string1: List[Char], string2 : List[Char]) : Boolean = {
-  string2 exists (substring => string1 contains substring)
+def rotateSafe(matrix: List[List[Int]])(times : Int) : List[List[Int]] = {
+
+  if((times % 4) == 0) matrix else rotateSafe (matrix) (times % 4 - 1)
 }
-
-val s1 = "x".toList
-val s2 = "klklx".toList
-
-contains(s1, s2)
-contains(s2, s1)
+val matrix = List(List(1, 2, 3, 4), List(1, 2, 3, 4), List(1, 2, 3, 4), List(1, 2, 3, 4))
