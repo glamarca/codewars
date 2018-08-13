@@ -4,3 +4,7 @@
 out
 gen
 /.idea/
+
+target/
+./Scala/target/
+
