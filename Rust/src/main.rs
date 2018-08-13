@@ -3,6 +3,7 @@ mod highest_and_low;
 mod string_end_with;
 mod are_the_same;
 mod sum_of_odds;
+mod longest_conseq_string;
 
 use highest_and_low::highest_and_low::high_and_low;
 
